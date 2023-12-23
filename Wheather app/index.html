@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Wheather check app</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-side">
+           
+            <div class="pic-gradiant"></div>
+            <div class="today-info">
+                <h2>Wednsday</h2>
+                <span>20 December 2023</span>
+                <div>
+                    <box-icon name='current-location'></box-icon>
+                    <i class='bx bx-current-location'></i>
+                    <span>Gujarat,India</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <i class='bx bx-sun'></i>
+                <h1 class="Weather-temp">
+                    25°C
+                </h1>
+                <h3>Sunny Day</h3>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="day-info">
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span class="value">4 %</span>
+                </div>
+                <div>
+                    <span class="title">Humidity</span>
+                    <span class="value">17 %</span>
+                </div>
+                <div>
+                    <span class="title">wind-speed</span>
+                    <span class="value">75 km/hr</span>
+                </div>
+            </div>
+
+            <ul class="days-list">
+                <li>
+                    <i class='bx bx-sun'></i>
+                    <span>Wed </span>
+                    <span class="day-temp">
+                        35°C
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-wind'></i>
+                    <span>thu -</span>
+                    <span class="day-temp">
+                        15°C
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-snow'></i>
+                    <span>fri </span>
+                    
+                    <span class="day-temp">
+                        4°C
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-sun'></i>
+                    <span>sat </span>
+                    <span class="day-temp">
+                        24°C
+                    </span>
+                </li>
+            </ul>
+
+            <!-- <form action="/search" method="get">
+                <input type="submit" value="Search"> 
+                <input type="text" id="search-bar" name="q" placeholder="Search Location">              
+                 <label for="search-bar"></label>
+                
+            </form> -->
+            <form action="/search" method="get">
+                <div id="search-container">
+                    <label for="search-bar" id="search-icon"><i class="fas fa-search"></i></label>
+                    <input type="text" id="search-bar" name="q" placeholder="enter location">
+                    <br>
+                    <input type="submit" id="btn-search"value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+   <script src="index1.js"></script>
+
+</html>

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    /* color: aliceblue; */
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    background-image: url('2.jpg');
+    background-color: rgba(59, 54, 54, 0.5);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1.9;
+    color: aliceblue;
+    /* background-image: url(1.jpg); */
+}
+.container{
+    /* display: flex; */
+    margin-top: 2%;
+    height: 49%;
+    background-color: #1e2739;
+    border-radius: 12%;
+    box-shadow: 0px 10px 20px #1e2739;
+
+    color: aliceblue;
+}
+
+.left-side{
+    float: left;
+    height: 100%;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-image: url('1.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 12%;
+    transform: scale(1.05) perspective(200px);
+    transition: all 0.5s ease;
+    color: aliceblue;
+}
+
+.left-side:hover{
+        transform: scale(1.1) perspective(200px) rotatey(12deg);
+        transition:all 0.5s  ease;
+        cursor: pointer;
+        color: aliceblue;
+
+}
+
+.pic-gradiant{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg,#7d8de3 40%,#3a7de1 100%);
+    border-radius: 12%;
+    opacity: 0.5;
+    color: aliceblue;
+}
+
+.today-info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+     margin-top: 25px;
+     color: aliceblue;
+}
+
+.today-weather{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+    left: 20px;
+    color: aliceblue;
+}
+
+.today-weather .bx{
+    font-size: 2.8rem;
+    color: aliceblue;
+}
+
+.Weather-temp-l{
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: aliceblue;
+}
+.right-side{
+    float: right;
+    height: 103%;
+    width: 290px;
+    padding: 25px 24px;
+    color: aliceblue;
+    
+}
+
+.day-info{
+    display: flex;
+    flex-direction: column;
+    padding: 26px 07px;
+    color: aliceblue;
+}
+
+.day-info div:not(:last-child){
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.day-info .title{
+    font-weight: 650;
+    color: aliceblue;
+}
+
+.day-info .value{
+    float: right;
+    color: aliceblue;
+}
+#search-bar{
+    margin: 2px;
+   padding: 8px 2px;
+   color: #1e2739;
+   background: rgb(225, 225, 225);
+    width: 75%;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+
+}
+#btn-search{
+    margin-left: 10%;
+    background: rgba(41, 26, 211, 0.35);
+    box-shadow:0px 10px 20px rgba(96, 93, 132, 0.35); ;
+   color: #fff;
+    width: 30%;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  
+}
+
+.days-list{
+    display: flex;
+    list-style: none;
+    margin: 12px 8px;
+    box-shadow: 0px 10px 20px rgba(96, 93, 132, 0.35);
+    border-radius: 10%;
+    color: aliceblue;
+    
+}
+.days-list li{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.days-list li:hover{
+   transform: scale(1.1);
+   color: #1e2739;
+   background: #fff;
+   box-shadow:0px 10px 20px rgba(96, 93, 132, 0.35);
+   border-radius: 12%;
+  
+
+}
+.days-list li .bx:hover{
+   color: #1e2739
+}
+
+.days-list li .bx{
+    margin-bottom: 7px;
+    font-size: 1.8rem;
+}
+
+
+
+
